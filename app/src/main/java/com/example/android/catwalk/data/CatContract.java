@@ -39,6 +39,12 @@ public class CatContract {
         public final static String COLUMN_ITEM_IMAGE = "image";
 
         public final static String COLUMN_ITEM_GENDER = "gender";
+
+        public final static String GENDER_MALE = "male";
+        public final static String GENDER_FEMALE = "female";
+        public final static String GENDER_NONBINARY = "non-binary";
+        public final static String GENDER_UNKNOWN = "unknown";
+
     }
 
 }

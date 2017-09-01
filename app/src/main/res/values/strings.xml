@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Cat Walk</string>
+    <string name="gender_unknown">Gender Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_nonbinary">Non-Binary</string>
 </resources>
