@@ -44,7 +44,6 @@ public class CatContract {
         public final static String GENDER_FEMALE = "female";
         public final static String GENDER_NONBINARY = "non-binary";
         public final static String GENDER_UNKNOWN = "unknown";
-
     }
 
 }

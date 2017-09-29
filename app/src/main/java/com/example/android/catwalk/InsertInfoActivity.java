@@ -163,6 +163,7 @@ public class InsertInfoActivity extends AppCompatActivity {
         values.put(CatContract.CatEntry.COLUMN_ITEM_IMAGE, imageString);
         values.put(CatContract.CatEntry.COLUMN_ITEM_GENDER, mGender);
 
+//        moment of failure, Check Activity
         Uri newUri = getContentResolver().insert(CatContract.CatEntry.CONTENT_URI, values);
 
         if (newUri == null) {

@@ -16,7 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InsertInfoActivity"></activity>
+        <activity android:name=".InsertInfoActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <provider
+            android:authorities="com.example.android.catwalk"
+            android:name="com.example.android.catwalk.data.CatProvider"
+            android:enabled="true"
+            android:exported="true"
+            />
     </application>
 
 </manifest>

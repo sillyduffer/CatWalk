@@ -94,14 +94,14 @@ public class CatProvider extends ContentProvider{
             throw new IllegalArgumentException("Product requires a name");
         }
 
-        Integer quantity = values.getAsInteger(CatContract.CatEntry.COLUMN_ITEM_GENDER);
-        if (quantity == null || quantity < 0 || quantity > 2) {
+        String gender = values.getAsString(CatContract.CatEntry.COLUMN_ITEM_GENDER);
+        if (gender == null) {
             throw new IllegalArgumentException("Product requires valid quantity");
         }
 
-        Integer price = values.getAsInteger(CatContract.CatEntry.COLUMN_ITEM_COLOUR);
-        if (price == null) {
-            throw new IllegalArgumentException("Product requires valid price");
+        String price = values.getAsString(CatContract.CatEntry.COLUMN_ITEM_COLOUR);
+        if (price == null || price.isEmpty()) {
+            throw new IllegalArgumentException("Product requires valid colour");
         }
 
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
