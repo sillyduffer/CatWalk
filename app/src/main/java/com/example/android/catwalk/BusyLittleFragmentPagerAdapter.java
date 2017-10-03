@@ -1,7 +1,6 @@
 package com.example.android.catwalk;
 
 import android.support.v4.app.*;
-import android.support.v4.app.ListFragment;
 
 class BusyLittleFragmentPagerAdapter extends FragmentPagerAdapter {
 
@@ -14,7 +13,7 @@ class BusyLittleFragmentPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new CameraFragment();
         } else if (position == 1) {
-            return new ListFragment();
+            return new CatsListFragment();
         } else {
             return new DetailsFragment();
         }
@@ -22,6 +21,6 @@ class BusyLittleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 3;
     }
 }

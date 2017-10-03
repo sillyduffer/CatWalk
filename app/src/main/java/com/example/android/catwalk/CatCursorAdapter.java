@@ -28,7 +28,7 @@ public class CatCursorAdapter extends CursorAdapter {
         TextView nameView = (TextView) view.findViewById(R.id.name);
         final Uri currentProductUri = ContentUris.withAppendedId(CatContract.CatEntry.CONTENT_URI, cursor.getInt(cursor.getColumnIndexOrThrow((CatContract.CatEntry._ID))));
         int nameColumnIndex = cursor.getColumnIndex(CatContract.CatEntry.COLUMN_ITEM_NAME);
-        String productName = cursor.getString(nameColumnIndex);
-        nameView.setText(productName);
+        String catName = cursor.getString(nameColumnIndex);
+        nameView.setText(catName);
     }
 }
